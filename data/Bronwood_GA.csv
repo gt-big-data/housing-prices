@@ -1,0 +1,5 @@
+property_id,is_new_construction,is_for_rent,is_subdivision,is_contingent,is_price_reduced,is_pending,is_foreclosure,is_plan,is_coming_soon,is_new_listing,year_built,baths_3qtr,sold_date,sold_price,baths_full,name,baths_half,lot_sqft,sqft,baths,sub_type,baths_1qtr,garage,stories,beds,type,list_date,list_price,status,postal_code,state,state_code,city,county,address_line,latitude,longitude,tags
+6725439249,,,,,,,,,,,1971,,2022-10-24,10000,,,,35510,1170,0,,,,,,mobile,,,sold,39826,Georgia,GA,Bronwood,Terrell,256 Geise St S,31.826299,-84.362393,
+6472185712,,,,,,,,,,,1983,,2022-10-24,10000,,,,34332,780,0,,,,,,mobile,,,sold,39826,Georgia,GA,Bronwood,Terrell,256 Geise St S,31.825974,-84.362322,
+6456235888,,,,,,,,,,,1961,,2022-08-23,165000,1,,,65340,840,1,,,,1,,single_family,,,sold,39826,Georgia,GA,Bronwood,Terrell,910 George Jennings Rd,31.80246,-84.394585,
+6456086825,,,,,,,,,,,1999,,2022-08-23,165000,1,,,43124,1536,1,,,,1,2,single_family,,,sold,39826,Georgia,GA,Bronwood,Terrell,874 George Jennings Rd,31.802589,-84.395329,

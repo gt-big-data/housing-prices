@@ -1,0 +1,19 @@
+property_id,is_new_construction,is_for_rent,is_subdivision,is_contingent,is_price_reduced,is_pending,is_foreclosure,is_plan,is_coming_soon,is_new_listing,year_built,baths_3qtr,sold_date,sold_price,baths_full,name,baths_half,lot_sqft,sqft,baths,sub_type,baths_1qtr,garage,stories,beds,type,list_date,list_price,status,postal_code,state,state_code,city,county,address_line,latitude,longitude,tags
+5510515719,,,,,,,,,,False,,,2022-11-21,280000,,,,3578018,,0,,,,,,land,2022-09-27T14:45:01Z,290000,sold,30833,Georgia,GA,Wrens,Jefferson,3061 Twin Oaks Rd,33.130952,-82.364266,"['big_lot', 'farm', 'ranch']"
+5534284664,,,,,,,,,,,,,2022-10-20,70000,,,,402494,0,,,,,0,,land,,,sold,30833,Georgia,GA,Wrens,Jefferson,314 Old Quaker Rd,33.213476,-82.375459,
+6713181199,,,,,,,,,,,1959,,2022-10-13,150000,1,,,36590,0,1,,,,1,,commercial,,,sold,30833,Georgia,GA,Wrens,Jefferson,506 N Main St,33.215438,-82.38282,
+6468501520,,,,,,,,,,False,1969,,2022-10-11,73900,2,,,27007,1804,2,,,,,4,single_family,2022-08-12T00:20:48Z,66500,sold,30833,Georgia,GA,Wrens,Jefferson,305 Terrace Hill Rd,33.211902,-82.377885,"['central_air', 'community_outdoor_space', 'dining_room', 'family_room', 'forced_air', 'single_story', 'rental_property', 'big_lot', 'farm', 'ranch', 'fixer_upper']"
+9655390688,,,,,,,,,,False,,,2022-10-06,10500,,,,86249,,0,,,,,,land,2021-08-19T16:00:31Z,12000,sold,30833,Georgia,GA,Wrens,Jefferson,Shady Oaks Rd Lot 19,,,"['well_water', 'big_lot']"
+5561227941,,,,,,,,,,,1980,,2022-10-06,115000,2,,,15246,1728,2,,,,1,,single_family,,,sold,30833,Georgia,GA,Wrens,Jefferson,203 Peachtree St,33.213239,-82.380471,
+5533427548,,,,,,,,,,,1948,,2022-09-02,70000,1,,,138521,960,1,,,,1,,single_family,,,sold,30833,Georgia,GA,Wrens,Jefferson,2373 Gus Perdue Rd,33.23754,-82.368644,
+5559662771,,,,,,,,,,,1900,,2022-09-02,61000,1,,,15246,1200,1,,,,1,,single_family,,,sold,30833,Georgia,GA,Wrens,Jefferson,102 Hill St,33.210773,-82.387535,
+9784953558,,,,,,,,,,,,,2022-08-22,150000,,,,,,,,,,,,,,,sold,30833,Georgia,GA,Wrens,Jefferson,2872 GA Highway 102,33.217154,-82.421509,
+5527725859,,,,,,,,,,,1969,,2022-08-22,150000,1,,,32670,1075,1,,,,1,2,single_family,,,sold,30833,Georgia,GA,Wrens,Jefferson,2878 Highway 102,33.217148,-82.421505,
+5559439176,,,,,,,,,,False,1900,,2022-08-19,164900,2,,,12197,2080,2,,,,,3,single_family,2022-05-27T14:05:46Z,164900,sold,30833,Georgia,GA,Wrens,Jefferson,202 Hill St,33.211054,-82.388193,"['central_air', 'community_outdoor_space', 'dining_room', 'dishwasher', 'fireplace', 'forced_air', 'laundry_room', 'recreation_facilities', 'basement', 'updated_kitchen', 'high_ceiling', 'open_floor_plan', 'floor_plan', 'front_porch', 'groundscare']"
+5994772548,,,,,,,,,,False,,,2022-08-12,33000,,,,389426,,0,,,,,,land,2022-06-08T13:33:33Z,50000,sold,30833,Georgia,GA,Wrens,Jefferson,Howard St,33.202907,-82.386058,['wooded_land']
+6431161045,,,,,,,,,,,1994,,2022-08-04,40000,2,,,291852,2240,2,,,,1,4,mobile,,,sold,30833,Georgia,GA,Wrens,Jefferson,1363 Shady Oaks Rd,33.13978,-82.348741,
+6465147585,,,,,,,,,,,1960,,2022-07-29,65000,2,,,21780,1050,2,,,,1,,single_family,,,sold,30833,Georgia,GA,Wrens,Jefferson,603 Braswell St,33.215403,-82.388951,
+5533912005,,,,,,,,,,,,,2022-06-28,80000,1,,,20038,1215,1,,,,1,,single_family,,,sold,30833,Georgia,GA,Wrens,Jefferson,2411 GA Highway 17 N,33.222892,-82.401714,
+9835505459,,,,,,,,,,,2007,,2022-06-23,166663,,,,819799,0,,,,,1,,commercial,,,sold,30833,Georgia,GA,Wrens,Jefferson,17446 US Highway 1 N,33.221594,-82.371354,
+5302013382,,,,,,,,,,,,,2022-06-16,169500,1,,,45738,1215,1,,,,1,,single_family,,,sold,30833,Georgia,GA,Wrens,Jefferson,4383 GA Highway 80,33.1904,-82.329901,
+5187487436,,,,,,,,,,,,,2022-06-13,290300,,,,94090,0,,,,,0,,single_family,,,sold,30833,Georgia,GA,Wrens,Jefferson,1047 Foxberry Dr,33.240003,-82.344431,

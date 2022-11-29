@@ -1,0 +1,3 @@
+property_id,is_new_construction,is_for_rent,is_subdivision,is_contingent,is_price_reduced,is_pending,is_foreclosure,is_plan,is_coming_soon,is_new_listing,year_built,baths_3qtr,sold_date,sold_price,baths_full,name,baths_half,lot_sqft,sqft,baths,sub_type,baths_1qtr,garage,stories,beds,type,list_date,list_price,status,postal_code,state,state_code,city,county,address_line,latitude,longitude,tags
+6219105575,,,,,,,,,,False,1900,,2022-11-04,28500,1,,,17424,896,1,,,,1,2,single_family,2022-10-31T19:12:32Z,35000,sold,30286,Georgia,GA,Thomaston,Upson,1000 S Center St,32.871346,-84.324829,"['den_or_office', 'laundry_room', 'single_story']"
+9200653207,,,,,,,,,,,,,2022-06-27,679000,,,,,,,,,,,,,,,sold,30286,Georgia,GA,Thomaston,Upson,276 Davis Lake Rd,32.869692,-84.344609,

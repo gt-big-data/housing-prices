@@ -1,0 +1,3 @@
+property_id,is_new_construction,is_for_rent,is_subdivision,is_contingent,is_price_reduced,is_pending,is_foreclosure,is_plan,is_coming_soon,is_new_listing,year_built,baths_3qtr,sold_date,sold_price,baths_full,name,baths_half,lot_sqft,sqft,baths,sub_type,baths_1qtr,garage,stories,beds,type,list_date,list_price,status,postal_code,state,state_code,city,county,address_line,latitude,longitude,tags
+9287753408,,,,,,,,,,,1950,,2022-10-03,63000,1,,,27443,1304,1,,,,1,,single_family,,,sold,31071,Georgia,GA,Pineview,Wilcox,359 Warren St,32.109624,-83.493725,
+5505332666,,,,,,,,,,,1850,,2022-09-29,1107969,6,,,217800,720,6,,,,1,6,single_family,,,sold,31071,Georgia,GA,Pineview,Pulaski,388 Pope Rd,32.157535,-83.47686,
