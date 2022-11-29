@@ -4,8 +4,8 @@ import sys
 import re
 import traceback
 
-def fetch_data(url: str, querystring: dict, headers: dict) -> list:
 
+def fetch_data(url: str, querystring: dict, headers: dict) -> list:
     """ Fetches data from an API source while ensuring requests do not exceed the free limit
 
     Parameters
@@ -26,7 +26,7 @@ def fetch_data(url: str, querystring: dict, headers: dict) -> list:
 
     try:
 
-        with open('request_count.txt','r') as f:
+        with open('request_count.txt', 'r') as f:
 
             request_count = int(f.readline())
 
@@ -34,9 +34,10 @@ def fetch_data(url: str, querystring: dict, headers: dict) -> list:
 
         request_count = 0
 
-    response = requests.request("GET", url, headers=headers, params=querystring)
+    response = requests.request(
+        "GET", url, headers=headers, params=querystring)
 
-    request_count +=1
+    request_count += 1
 
     response.raise_for_status()
 
@@ -62,9 +63,10 @@ def fetch_data(url: str, querystring: dict, headers: dict) -> list:
 
         querystring['offset'] = str(int(querystring['offset']) + result_size)
 
-        response = requests.request("GET", url, headers=headers, params=querystring)
+        response = requests.request(
+            "GET", url, headers=headers, params=querystring)
 
-        request_count+=1
+        request_count += 1
 
         try:
 
@@ -82,18 +84,19 @@ def fetch_data(url: str, querystring: dict, headers: dict) -> list:
 
         remaining -= result_size
 
-        print(f"GET {result_size} results OF TOTAL {total} WITH {remaining} remaining")
+        print(
+            f"GET {result_size} results OF TOTAL {total} WITH {remaining} remaining")
 
         data.extend(response_json['data']['results'])
 
-    with open('request_count.txt','w') as f:
+    with open('request_count.txt', 'w') as f:
 
         f.write(str(request_count))
 
     return data
 
-def row_to_dict(row: dict) -> dict:
 
+def row_to_dict(row: dict) -> dict:
     """ Converts each JSON row to a dictionary object
 
     Parameters
@@ -107,7 +110,6 @@ def row_to_dict(row: dict) -> dict:
         A dictionary containing relevant features from the data
 
     """
-
 
     row_dict = {}
 
@@ -125,7 +127,7 @@ def row_to_dict(row: dict) -> dict:
 
     def property_id():
 
-        row_dict['property_id'] = row ['property_id']
+        row_dict['property_id'] = row['property_id']
 
     for key in row['flags'].keys():
 
@@ -146,7 +148,7 @@ def row_to_dict(row: dict) -> dict:
         row_dict['state'] = row['location']['address']['state']
 
     def state_code():
-    
+
         row_dict['state_code'] = row['location']['address']['state_code']
 
     def city():
@@ -183,7 +185,8 @@ def row_to_dict(row: dict) -> dict:
 
         row_dict['tags'] = row['tags']
 
-    funcs = [list_date, list_price, status, property_id, postal_code, state, state_code, city, county, address_line, latitude, longitude, tags]
+    funcs = [list_date, list_price, status, property_id, postal_code, state,
+             state_code, city, county, address_line, latitude, longitude, tags]
 
     for function in funcs:
 
@@ -194,20 +197,19 @@ def row_to_dict(row: dict) -> dict:
         except TypeError as e:
 
             tb = traceback.format_exc()
-    
+
             m = re.search("row_dict\[(.*?)\]", tb)
 
             key = m.groups()[0].split("'")[1]
-    
+
             row_dict[key] = None
 
             print(f"Setting {key} to None")
 
     return row_dict
 
+
 def results_to_df(results: list) -> pd.DataFrame:
-
-
     """ Creates a DataFrame from data fetched from the API
 
     Parameters
@@ -222,13 +224,14 @@ def results_to_df(results: list) -> pd.DataFrame:
 
     """
 
-    df = pd.DataFrame(columns = row_to_dict(results[0]).keys())
+    df = pd.DataFrame(columns=row_to_dict(results[0]).keys())
 
     for row in results:
 
         df = df.append(row_to_dict(row), ignore_index=True)
 
     return df.set_index('property_id')
+
 
 if __name__ == '__main__':
 
@@ -243,32 +246,13 @@ if __name__ == '__main__':
     state_code = sys.argv[2]
 
     rapid_api_key = sys.argv[3]
-            
-    results = fetch_data("https://us-real-estate.p.rapidapi.com/sold-homes", {"state_code":f"{state_code}" ,"city":f"{city}","offset":"0","sort":"sold_date", }, 
-                     {
-	                    "X-RapidAPI-Key": rapid_api_key,
-	                    "X-RapidAPI-Host": "us-real-estate.p.rapidapi.com"
-                    })
+
+    results = fetch_data("https://us-real-estate.p.rapidapi.com/sold-homes", {"state_code": f"{state_code}", "city": f"{city}", "offset": "0", "sort": "sold_date", },
+                         {
+        "X-RapidAPI-Key": rapid_api_key,
+        "X-RapidAPI-Host": "us-real-estate.p.rapidapi.com"
+    })
 
     df = results_to_df(results)
 
     df.to_csv(f'{city}_{state_code}.csv')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
