@@ -1,5 +1,0 @@
-property_id,is_new_construction,is_for_rent,is_subdivision,is_contingent,is_price_reduced,is_pending,is_foreclosure,is_plan,is_coming_soon,is_new_listing,year_built,baths_3qtr,sold_date,sold_price,baths_full,name,baths_half,lot_sqft,sqft,baths,sub_type,baths_1qtr,garage,stories,beds,type,list_date,list_price,status,postal_code,state,state_code,city,county,address_line,latitude,longitude,tags
-9051527205,,,,,,,,,,False,,,2022-09-27,25000,,,,32670,,0,,,,,,land,2022-07-22T17:22:41Z,25000,sold,31627,Georgia,GA,Cecil,Cook,Fellowship Rd,,,
-6672551294,,,,,,,,,,,1930,,2022-09-27,25000,1,,,32670,638,1,,,,1,,single_family,,,sold,31632,Georgia,GA,Hahira,Cook,807 Fellowship Rd,31.046374,-83.378342,
-6730868001,,,,,,,,,,,1900,,2022-09-09,55000,2,,,19166,1241,2,,,,1,,single_family,,,sold,31637,Georgia,GA,Lenox,Cook,70 N Union Rd,31.047074,-83.39508,
-6697067791,,,,,,,,,,False,,,2022-06-22,20000,,,,262231,,0,,,,,,land,2022-05-19T17:37:27Z,18900,sold,31632,Georgia,GA,Hahira,Cook,8 Sonja Dr,31.050764,-83.381682,['cul_de_sac']
