@@ -61,7 +61,7 @@
   weighted average of the other ratios it cannot be greater. This is true for
   any individual row but when calculate on entire column this fact seems to
   disappear. Any thoughts?
--**TODO:**
+- **TODO:**
     - combine data for each city in some manner for better comparisons across
       different data files
 
