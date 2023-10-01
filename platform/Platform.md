@@ -15,7 +15,7 @@
     - The median population density for the cities is ~560
     - Population density is skewed right
 
-### FP_to_country.xlsx (from Advait)
+### FP_to_country.xlsx
 - List of all 159 counties of GA
 - County names in alphabetical order
 - Two columns: FIPS code and associated county name
