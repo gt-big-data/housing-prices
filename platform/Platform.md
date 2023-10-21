@@ -1,4 +1,4 @@
-# Platform Subteam
+# Platform Data
 
 ## cities.json
 * 624 cities in GA
