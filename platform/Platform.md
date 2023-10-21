@@ -45,6 +45,14 @@
     * Shape area and length not represented in proper units
     * Column headings made more descriptive
 
+## data.csv
+* 9028 listings
+* Includes key house features (ex: beds, baths, garage capacity, year built)
+* Includes location info (ex: city population data, employment entropy/density)
+* Price data only consists of list price and sold price
+* Notes: 
+    * Gaps in columns B-J (states whether house is new construction, for rent, foreclosure, etc.)
+
 ## Other Data Sources
 * ZIP Codes Business Patterns (ZBP) APIs: [https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html]
 * Add data covering school performance scores & government budgets
