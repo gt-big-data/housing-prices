@@ -8,6 +8,9 @@
     3. Population
     4. Population density
 * Cities ordered from greatest to least in terms of population density
+* Notes
+    * Add what county city belongs to
+    * Data could possibly be merged with FP_to_county.xslx
 
 ## FP_to_county.xlsx
 * List of all 159 counties of GA
@@ -15,6 +18,8 @@
 * 2 columns
     1. FIPS (Federal Information Processing System) code
     2. Associated county name
+* Notes
+    * Add area of county (can be found on Wikipedia, New Georgia Encyclopedia)
 
 ## ZIP_TRACT_122021.xlsx
 * Includes zip code and tract code
@@ -25,6 +30,7 @@
 * **tot_ratio**: ratio of all addresses in the zip – Tract to the total number of all types of addresses in the entire zip
 * 4818 data points
 
+
 ## censusData.xslx
 * 5529 data points
 * 117 columns/categories
@@ -34,3 +40,12 @@
     3. Work Age
     4. Automobile Ownership
     5. Low/Med/High Wage
+* Notes
+    * Data represented in columns AI-DJ unclear (could be omitted)
+    * Shape area and length not represented in proper units
+    * Column headings made more descriptive
+
+## Other Data Sources
+* ZIP Codes Business Patterns (ZBP) APIs: [https://www.census.gov/data/developers/data-sets/cbp-nonemp-zbp/zbp-api.html]
+* Add data covering school performance scores & government budgets
+* Redfin provides direct access to data from local multiple listing services: [https://www.redfin.com/news/data-center/]
