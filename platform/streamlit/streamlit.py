@@ -2,22 +2,43 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title('Uber pickups in NYC')
+st.title('BDBI Housing Price Prediction')
 
-st.button('Hit me')
-st.data_editor('Edit data', data)
-st.checkbox('Check me out')
-st.radio('Pick one:', ['nose','ear'])
-st.selectbox('Select', [1,2,3])
-st.multiselect('Multiselect', [1,2,3])
-st.slider('Slide me', min_value=0, max_value=10)
-st.select_slider('Slide to select', options=[1,'2'])
-st.text_input('Enter some text')
-st.number_input('Enter a number')
-st.text_area('Area for textual entry')
-st.date_input('Date input')
-st.time_input('Time entry')
-st.file_uploader('File uploader')
-st.download_button('On the dl', data)
-st.camera_input("一二三,茄子!")
-st.color_picker('Pick a color')
+price_label = "Estimated Price:"
+
+def calculate_price(
+        sold_date,
+        baths_full,
+        baths_half,
+        lot_sqft,
+        sqft,
+        garage,
+        stories,
+        beds,
+        type,
+        city,
+        tract,
+        pct_1car,
+        pct_2car,
+        population_density,
+        employment_density,
+        jobs_nearby,
+        employment_entropy,
+        walkability
+): 
+    # return random between 50k and 1m for now
+    return np.random.randint(50000, 1000000)
+
+sold_date = st.date_input('Target Sell Date', value=pd.to_datetime('today'))
+baths_full = st.number_input('Number of Full Baths', value=1)
+baths_half = st.number_input('Number of Half Baths', value=0)
+lot_sqft = st.number_input('Lot Square Footage', value=5000)
+sqft = st.number_input('Square Footage', value=1500)
+
+
+# price = calculate_price(sold_date=sold_date.year,)
+num = sold_date.year * baths_full * baths_half * lot_sqft * sqft
+
+st.metric(price_label, value=f'${int(num)}')
+
+# Make callback
